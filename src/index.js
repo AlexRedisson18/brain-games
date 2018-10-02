@@ -7,6 +7,4 @@ const sayHelloToUser = () => {
   console.log(`Hello, ${name}!`);
 };
 
-export {
-  sayHelloToUser
-};
+export default sayHelloToUser;
