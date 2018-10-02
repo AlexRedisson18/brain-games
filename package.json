@@ -1,6 +1,6 @@
 {
   "name": "braingamesred18",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "mini game that prints greeting",
   "bin": {
     "brain-games": "dist/bin/brain-games.js"
@@ -22,7 +22,9 @@
     "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.2",
     "@babel/node": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.1.0"
+    },
+  "dependencies": {
     "readline-sync": "^1.4.9"
   }
 }
