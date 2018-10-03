@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "mini game that prints greeting",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
