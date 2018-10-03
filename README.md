@@ -14,3 +14,8 @@ run `sudo npm i -g braingamesred18`
 run `brain-even`
 
 [![asciicast](https://asciinema.org/a/G2yhc099SIcjCJ1SZwHRH1eOG.png)](https://asciinema.org/a/G2yhc099SIcjCJ1SZwHRH1eOG)
+
+### brain-calc game
+run `brain-calc`
+
+[![asciicast](https://asciinema.org/a/oWzYD9FuPiytv8RkZFzGvAE3s.png)](https://asciinema.org/a/oWzYD9FuPiytv8RkZFzGvAE3s)

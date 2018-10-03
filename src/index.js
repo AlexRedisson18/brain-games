@@ -8,17 +8,17 @@ const engine = (instruction, game) => {
   console.log(`Hello, ${name}`);
   console.log('');
 
-  let correctAnswer = 0;
-  while (correctAnswer < 3) {
+  let correctAnswers = 0;
+  while (correctAnswers < 3) {
     const gameStatus = game();
     console.log(`Question: ${gameStatus.question}`);
-    const answer = readlineSync.question('Your answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
 
-    if (answer === gameStatus.isCorrectAnswer) {
+    if (userAnswer === gameStatus.correctAnswer) {
       console.log('Correct!');
-      correctAnswer += 1;
+      correctAnswers += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${gameStatus.isCorrectAnswer}'.\nLet's try again, ${name}`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gameStatus.correctAnswer}'.\nLet's try again, ${name}`);
       return;
     }
   }

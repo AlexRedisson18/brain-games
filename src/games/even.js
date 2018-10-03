@@ -9,7 +9,7 @@ const game = () => {
   const isEven = randomNum % 2 === 0;
   return {
     question: `${randomNum}`,
-    isCorrectAnswer: isEven ? 'yes' : 'no',
+    correctAnswer: isEven ? 'yes' : 'no',
   };
 };
 
