@@ -19,3 +19,8 @@ run `brain-even`
 run `brain-calc`
 
 [![asciicast](https://asciinema.org/a/oWzYD9FuPiytv8RkZFzGvAE3s.png)](https://asciinema.org/a/oWzYD9FuPiytv8RkZFzGvAE3s)
+
+### brain-gcd game
+run `brain-gcd`
+
+[![asciicast](https://asciinema.org/a/qZgbA2HEbVaCvTf35WTvwIA1A.png)](https://asciinema.org/a/qZgbA2HEbVaCvTf35WTvwIA1A)
