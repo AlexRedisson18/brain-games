@@ -1,20 +1,15 @@
 import engine from '..';
 import getRandomNumber from '../random';
 
-const instruction = 'Answer "yes" if number even otherwise answer "no".';
+const description = 'Answer "yes" if number even otherwise answer "no".';
 
-const game = () => {
-  const randomNum = getRandomNumber(50);
+const isEven = n => n % 2 === 0;
 
-  const isEven = randomNum % 2 === 0;
-  return {
-    question: `${randomNum}`,
-    correctAnswer: isEven ? 'yes' : 'no',
-  };
+const gameData = () => {
+  const number = getRandomNumber(50);
+  const question = `${number}`;
+  const correctAnswer = isEven(number) ? 'yes' : 'no';
+  return { question, correctAnswer };
 };
 
-const runEvenGame = () => {
-  engine(instruction, game);
-};
-
-export default runEvenGame;
+export default () => engine(description, gameData);

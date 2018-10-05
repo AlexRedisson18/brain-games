@@ -1,9 +1,9 @@
 import engine from '..';
 import getRandomNumber from '../random';
 
-const instruction = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-const game = () => {
+const gameData = () => {
   const gcd = (a, b) => {
     if (b === 0) {
       return a;
@@ -12,15 +12,10 @@ const game = () => {
   };
   const first = getRandomNumber(100) + 1;
   const second = getRandomNumber(100) + 1;
-  const answer = gcd(first, second);
-  return {
-    question: `${first} ${second}`,
-    correctAnswer: String(answer),
-  };
+  const getAnswer = gcd(first, second);
+  const question = `${first} ${second}`;
+  const correctAnswer = String(getAnswer);
+  return { question, correctAnswer };
 };
 
-const runGcdGame = () => {
-  engine(instruction, game);
-};
-
-export default runGcdGame;
+export default () => engine(description, gameData);
