@@ -29,3 +29,8 @@ run `brain-gcd`
 run `brain-gcd`
 
 [![asciicast](https://asciinema.org/a/QZBUBXezoQkWV0P0OQYaJrwcj.png)](https://asciinema.org/a/QZBUBXezoQkWV0P0OQYaJrwcj)
+
+### brain-prime game
+run `brain-prime`
+
+[![asciicast](https://asciinema.org/a/yBjXHdmFr5lsIBriFr71KgLJJ.png)](https://asciinema.org/a/yBjXHdmFr5lsIBriFr71KgLJJ)

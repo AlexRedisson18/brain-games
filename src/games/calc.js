@@ -1,5 +1,5 @@
 import engine from '..';
-import getRandomNumber from '../utils/utils';
+import getRandomNumber from '../utils';
 
 
 const operators = ['+', '-', '*'];

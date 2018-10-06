@@ -1,15 +1,22 @@
 import engine from '..';
-import { getRandomNumber, getProgression } from '../utils/utils';
+import getRandomNumber from '../utils';
+
+const getProgression = (start, step, length) => {
+  const progression = [];
+  for (let i = 0; i <= length - 1; i += 1) {
+    progression.push(start + step * i);
+  }
+  return progression;
+};
+const progressionLength = 10;
 
 const description = 'What number is missing in this progression?';
-// массивы в пройденных курсах  не встречал, .join .push взял с первых же попавшихся сайтов.
-// также встречал варианты через .concat и array - но данные команды еще не освоил.
+
 const gameData = () => {
   const startValue = getRandomNumber(1, 10);
   const progressionStep = getRandomNumber(1, 10);
-  const progressionLength = 10;
   const progression = getProgression(startValue, progressionStep, progressionLength);
-  const lostItem = [getRandomNumber(0, 9)];
+  const lostItem = [getRandomNumber(0, progressionLength - 1)];
   const correctAnswer = String(progression[lostItem]);
   progression[lostItem] = '..';
   const question = progression.join(' ');
