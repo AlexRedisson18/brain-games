@@ -24,3 +24,8 @@ run `brain-calc`
 run `brain-gcd`
 
 [![asciicast](https://asciinema.org/a/qZgbA2HEbVaCvTf35WTvwIA1A.png)](https://asciinema.org/a/qZgbA2HEbVaCvTf35WTvwIA1A)
+
+### brain-progression game
+run `brain-gcd`
+
+[![asciicast](https://asciinema.org/a/QZBUBXezoQkWV0P0OQYaJrwcj.png)](https://asciinema.org/a/QZBUBXezoQkWV0P0OQYaJrwcj)

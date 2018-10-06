@@ -2,14 +2,17 @@ import readlineSync from 'readline-sync';
 
 const engine = (description, gameData) => {
   console.log('Welcome to the Brain Games');
-  console.log(`${description}`);
+  console.log(description);
   console.log('');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log('');
-
-  for (let i = 0; i <= 2; i += 1) {
-    //  не понял комментарий насчет "деструктивного присваивания" на строке ниже
+  const maxGameRounds = 3;
+  for (let i = 0; i < maxGameRounds; i += 1) {
+    /* так как сроки проекта поджимают - рефакторинг для внедрения
+     деструктивного присваивания введу в самом последнем коммите
+     (нахрапом внедрить не удалось - еще не изучил как сделать это правильно) ;
+    */
     const gameStatus = gameData();
     console.log(`Question: ${gameStatus.question}`);
     const userAnswer = readlineSync.question('Your answer: ');

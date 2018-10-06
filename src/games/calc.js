@@ -1,13 +1,15 @@
 import engine from '..';
-import getRandomNumber from '../random';
+import getRandomNumber from '../utils/utils';
 
-const description = 'What is the result of the expression?';
+
 const operators = ['+', '-', '*'];
 
+const description = 'What is the result of the expression?';
+
 const gameData = () => {
-  const sign = operators[getRandomNumber(3)];
-  const a = getRandomNumber(10);
-  const b = getRandomNumber(10);
+  const sign = operators[getRandomNumber(0, operators.length - 1)];
+  const a = getRandomNumber(1, 10);
+  const b = getRandomNumber(1, 10);
   let question = '';
   let correctAnswer = '';
   switch (sign) {
