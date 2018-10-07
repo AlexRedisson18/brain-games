@@ -5,12 +5,10 @@ const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
-  let i = 2;
-  while (i <= num / 2) {
+  for (let i = 2; i < num; i += 1) {
     if (num % i === 0) {
       return false;
     }
-    i += 1;
   }
   return true;
 };
@@ -21,7 +19,7 @@ const gameData = () => {
   const number = getRandomNumber(0, 500);
   const question = number;
   const correctAnswer = isPrime(number) ? 'yes' : 'no';
-  return { question, correctAnswer };
+  return [question, correctAnswer];
 };
 
 export default () => engine(description, gameData);

@@ -10,18 +10,14 @@ const engine = (description, gameData) => {
   console.log(`Hello, ${name}`);
   console.log('');
   for (let i = 0; i < maxGameRounds; i += 1) {
-    /* так как сроки проекта поджимают - рефакторинг для внедрения
-     деструктивного присваивания введу в самом последнем коммите
-     (нахрапом внедрить не удалось - еще не изучил как сделать это правильно) ;
-    */
-    const gameStatus = gameData();
-    console.log(`Question: ${gameStatus.question}`);
+    const [question, correctAnswer] = gameData();
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === gameStatus.correctAnswer) {
+    if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${gameStatus.correctAnswer}'.\nLet's try again, ${name}`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}`);
       return;
     }
   }

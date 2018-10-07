@@ -27,7 +27,7 @@ const gameData = () => {
       break;
     default:
   }
-  return { question, correctAnswer };
+  return [question, correctAnswer];
 };
 
 export default () => engine(description, gameData);

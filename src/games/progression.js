@@ -16,11 +16,11 @@ const gameData = () => {
   const startValue = getRandomNumber(1, 10);
   const progressionStep = getRandomNumber(1, 10);
   const progression = getProgression(startValue, progressionStep, progressionLength);
-  const lostItem = [getRandomNumber(0, progressionLength - 1)];
-  const correctAnswer = String(progression[lostItem]);
-  progression[lostItem] = '..';
+  const hiddenElementPosition = getRandomNumber(0, progressionLength - 1);
+  const correctAnswer = String(progression[hiddenElementPosition]);
+  progression[hiddenElementPosition] = '..';
   const question = progression.join(' ');
-  return { question, correctAnswer };
+  return [question, correctAnswer];
 };
 
 export default () => engine(description, gameData);

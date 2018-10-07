@@ -1,6 +1,6 @@
 {
   "name": "braingamesred18",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "mini brain game",
   "bin": {
     "brain-even": "dist/bin/brain-even.js",
